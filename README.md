@@ -2,11 +2,13 @@
 This is a corn hole scoreboard that uses python3.8 and tkinter to display your scores!
 ## Installing
 There are two options for installing:
-### 1. Open your terminal and type: `git clone https://github.com/BennyThePythonCoder/PyCornhole.git`
+### 1. Terminal
+Open your terminal and type: `git clone https://github.com/BennyThePythonCoder/PyCornhole.git`
 
 It should go into your /Downloads folder.
 
-### 2. You can download the .zip file by pressing "download as ZIP" in the repository.
+### 2. Downloading the ZIP file
+You can download the .zip file by pressing "download as ZIP" in the repository.
 The .zip file should go into your /Downloads folder.
 
 ## Running
