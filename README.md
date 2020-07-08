@@ -11,7 +11,7 @@ It should go into your /Downloads folder.
 ### 2. You can download the .zip file by pressing "download as ZIP" in the repository.
 The .zip file should go into your /Downloads folder.
 
-# Running
+## Running
 Just double click "CornHole.py", it should be an excecutable python script.
 If that doesn't work, open "CornHole.py" in your python editor, and run it. Geany or Thonny are recommended but not required (https://www.geany.org/, https://thonny.org/) Also make sure you have Python 3 installed. (https://python.org)
 
