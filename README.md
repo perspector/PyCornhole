@@ -15,4 +15,5 @@ The .zip file should go into your /Downloads folder.
 Just double click "CornHole.py", it should be an excecutable python script.
 If that doesn't work, open "CornHole.py" in your python editor, and run it. Geany or Thonny are recommended but not required (https://www.geany.org/, https://thonny.org/) Also make sure you have Python 3 installed. (https://python.org)
 
+I made it so it automatically installs all dependencies. Please make sure you have an internet connection the first time you run the program.
 I hope you like the program! If you have any questions or problems, please post an issue in this repository.
