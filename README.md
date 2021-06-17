@@ -1,5 +1,6 @@
 # PyCornhole
 This is a corn hole scoreboard that uses python3.8 and tkinter to display your scores!
+![PyCornhole](./cornHole.png)
 ## Installing
 There are two options for installing:
 ### 1. Terminal
