@@ -1,6 +1,6 @@
 # PyCornhole
 This is a corn hole scoreboard that uses python3.8 and tkinter to display your scores!
-<img src="https://raw.githubusercontent.com/BennyThePythonCoder/PyCornhole/master/cornHole.png" align="right" width="100px" height="100px"/>
+<img src="https://raw.githubusercontent.com/BennyThePythonCoder/PyCornhole/master/cornHole.png" align="right" width="200px" height="100px"/>
 ## Installing
 There are two options for installing:
 ### 1. Terminal
