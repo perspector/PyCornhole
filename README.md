@@ -4,7 +4,7 @@ This is a corn hole scoreboard that uses python3.8 and tkinter to display your s
 ## Installing
 There are two options for installing:
 ### 1. Terminal
-Open your terminal and type: `git clone https://github.com/BennyThePythonCoder/PyCornhole.git`
+Open your terminal and type: `git clone https://github.com/perspector/PyCornhole.git`
 
 It should go into your /Downloads folder.
 
