@@ -86,7 +86,7 @@ def resetScore():
     BlueLabel.pack(side=tk.LEFT, fill=tk.X)
     RedLabel.pack(side=tk.RIGHT, fill=tk.X)
     
-    
+    # If someone won, then close the label showing they won
     if BlueWonBoolean == True:
         BlueWon.destroy()
         BlueWonBoolean = False
@@ -94,10 +94,12 @@ def resetScore():
         RedWon.destroy()
         RedWonBoolean = False
     
+    # Define and display the blue, red, and reset buttons (They are all reset)
     BlueButton = tk.Button(window, text = "Blue Point", bg = "blue", fg = "yellow", width=30, height=15, command = addBlue)
     RedButton = tk.Button(window, text = "Red Point", bg = "red", fg = "black", width=30, height=15, command = addRed)
     ResetButton = tk.Button(window, text = "Reset", width=10, height=3, command = resetScore)
     
+    # place the score labels
     BlueLabel.pack(side=tk.LEFT, fill=tk.X)
     RedLabel.pack(side=tk.RIGHT, fill=tk.X)
 
@@ -108,6 +110,7 @@ def Quit():
 
 while True:
     try:
+        # Title label
         title = tk.Label(
                         text="Corn Hole!!!",
                         foreground="green",
@@ -115,7 +118,8 @@ while True:
                         width=175,
                         height=3
                         )
-
+        
+        # label with blue score
         BlueLabel = tk.Label(
                             textvariable=BlueText,
                             foreground="blue",
@@ -123,7 +127,8 @@ while True:
                             width=10,
                             height=5
                             )
-
+        
+        # label with red score
         RedLabel = tk.Label(
                             textvariable=RedText,
                             foreground="red",
@@ -132,24 +137,39 @@ while True:
                             height=5
                             )
         
+        # define the buttons
         BlueButton = tk.Button(window, text = "Blue Point", bg = "blue", fg = "yellow", width=30, height=15, command = addBlue)
         RedButton = tk.Button(window, text = "Red Point", bg = "red", fg = "black", width=30, height=15, command = addRed)
         ResetButton = tk.Button(window, text = "Reset",bg = "orange", fg = "black", width=10, height=3, command = resetScore)
         quitButton = tk.Button(window, text = "Quit :[", bg = "yellow", fg = "orange", command = Quit)
         
+        # define the image in the center
         image = tk.PhotoImage(file="cornHole.png")
         imageLabel = tk.Label(image=image)
         
+        # display the score labels
         BlueLabel.pack(side=tk.LEFT, fill=tk.X)
         RedLabel.pack(side=tk.RIGHT, fill=tk.X)
         
+        # display the title
         title.pack(side=tk.TOP, fill=tk.X)
+        
+        # display the buttons
         BlueButton.pack(side=tk.LEFT, fill=tk.X)
         RedButton.pack(side=tk.RIGHT, fill=tk.X)
+        
+        # display the image
         imageLabel.pack(side=tk.TOP, fill=tk.X)
+        
+        # display the quit button
         quitButton.pack(side=tk.BOTTOM, fill=tk.X)
+        
+        # display the reset score button
         ResetButton.pack(side=tk.BOTTOM, fill=tk.X)
         
+        # actually show the window and make everything happen
         window.mainloop()
-    except:
+    except exception as e:
+        # if there are errors, display the error nicely and stop the program
+        print(f"There was an error when running CornHole.py\nThe error is:\n{e}")
         exit()
