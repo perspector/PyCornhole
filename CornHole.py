@@ -7,29 +7,35 @@ except:
     os.system('sudo apt-get install python3.8 python3-tk')
     import tkinter as tk
 
+# Initialize the window
 window = tk.Tk()
 window.title("Corn Hole!!!")
 
+# RGB Colors
 WHITE = (255, 255, 255)
 BLUE = (0, 0, 255)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 BLACK = (0, 0, 0)
 
+# Set the scores to 0
 scoreRed = 0
 scoreBlue = 0
 
+# Neither Red nor Blue has won
 global BlueWonBoolean
 global RedWonBoolean
 BlueWonBoolean = False
 RedWonBoolean = False
 
+# Text to put on the buttons
 RedText = tk.StringVar()
 BlueText = tk.StringVar()
 
 RedText.set(str(scoreRed))
 BlueText.set(str(scoreBlue))
 
+# Add 1 to the Blue score
 def addBlue():
     global scoreBlue
     scoreBlue += 1
@@ -47,6 +53,7 @@ def addBlue():
                           height=10)
         BlueWon.pack(side=tk.TOP, fill=tk.X)
 
+# Add 1 to the Red score
 def addRed():
     global scoreRed
     scoreRed += 1
@@ -64,6 +71,7 @@ def addRed():
                           height=10)
         RedWon.pack(side=tk.TOP, fill=tk.X)
 
+# Reset the scores when the reset button is pressed
 def resetScore():
     global scoreRed
     global scoreBlue
@@ -71,10 +79,13 @@ def resetScore():
     global RedWonBoolean
     scoreRed = 0
     scoreBlue = 0
+    
+    # display the labels and format them to be the correct size
     RedText.set(str(scoreRed))
     BlueText.set(str(scoreBlue))
     BlueLabel.pack(side=tk.LEFT, fill=tk.X)
     RedLabel.pack(side=tk.RIGHT, fill=tk.X)
+    
     
     if BlueWonBoolean == True:
         BlueWon.destroy()
@@ -90,6 +101,7 @@ def resetScore():
     BlueLabel.pack(side=tk.LEFT, fill=tk.X)
     RedLabel.pack(side=tk.RIGHT, fill=tk.X)
 
+# When the quit button is pressed
 def Quit():
     print("Thanks for playing!!!")
     exit()
